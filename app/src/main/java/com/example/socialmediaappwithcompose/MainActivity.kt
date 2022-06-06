@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    HomePage()
                 }
             }
         }
@@ -30,14 +30,14 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+fun HomePage() {
+
 }
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     SocialMediaAppWithComposeTheme {
-        Greeting("Android")
+        HomePage()
     }
 }
